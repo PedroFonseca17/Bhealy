@@ -1,0 +1,328 @@
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: url('./fonts/GalanoGrotesque.otf'); /* IE9 Compat Modes */
+}
+.App {
+  text-align: center;
+  height: 4000px;
+  width: 100%;
+  background-color: #282828;
+  margin: 0;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+
+}
+
+.pessoasContainer{
+  max-width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  margin-top: 80px;
+}
+.tituloUrgencia{
+  font-family: GalanoGrotesque;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.9px;
+  text-align: center;
+  color: #cfd3e2;
+  margin-top: 50px;
+}
+
+.personReactContainer{
+  width: 91.4px;
+  height: 91.4px;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.14);
+  background-color: #1a1a1a;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: 9999;
+}
+
+.quadradosContainer{
+  width: 91.4px;
+  height: 22.8px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.quadradoHeartAmarelo,
+.quadradoPressureAmarelo,
+.quadradoSpo2Amarelo{
+  display: flex;
+  width: 29.9px;
+  height: 22.8px;
+  background-color: #ffce00;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.quadradoHeartVerde,
+.quadradoPressureVerde,
+.quadradoSpo2Verde{
+  width: 29.9px;
+  height: 22.8px;
+  background-color: #14a400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.quadradoHeartVermelho,
+.quadradoPressureVermelho,
+.quadradoSpo2Vermelho{
+  width: 29.9px;
+  height: 22.8px;
+  background-color: #dd0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* bordersssssssss */
+
+.quadradoHeartAmarelo,
+.quadradoHeartVerde,
+.quadradoHeartVermelho{
+  border-radius: 0px 0px 0px 7px;
+}
+
+.quadradoPressureAmarelo,
+.quadradoPressureVerde,
+.quadradoPressureVermelho{
+  border-radius: 0px 0px 7px 0px;
+}
+
+.imagesSensor {
+  width: 50%;
+}
+
+.afterHeader{
+  width: 100%;
+  height: 170px;
+  text-align: left;
+}
+
+.nomeUser{
+  margin-top: 40px;
+  margin-left:90px;
+  font-family: GalanoGrotesque;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 2px;
+  color: #cfd3e2;
+}
+
+.pacienteText{
+  margin-top: 50px;
+  margin-left:90px;
+  font-family: GalanoGrotesque;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 3.9px;
+  color: #cfd3e2;
+}
+
+.voltarText{
+  margin-top: 50px;
+  margin-left:90px;
+  font-family: GalanoGrotesque;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 3.9px;
+  color: #cfd3e2;
+}
+
+.pulseira{
+  font-size: 22px;
+  margin-left:90px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 1.2px;
+  color: #4f4f4f;
+}
+
+.infos{
+  height: 600px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heartContainer,
+.spo2Container,
+.pressionContainer{
+  width: 392.4px;
+  height: 441.5px;
+  border-radius: 16px;
+  background-color: #3a3a3a;
+  margin-top: 5%;
+}
+
+.infosIcons{
+  position: relative;
+  width: 100%;
+  margin-top: 5%;
+}
+
+
+
+.iconsFichaHeart{
+  position: absolute;
+  width: 8%;
+  left: 7%;
+}
+
+.iconsFichaS2o2{
+  position: absolute;
+  width: 10%;
+  left: 45%;
+  margin-top: 20px;
+}
+
+.iconsFichaEsteto{
+  position: absolute;
+  width: 8%;
+  left: 85%;
+}
+.infosContainers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+
+}
+
+.graph {
+  margin-top: 50px;
+}
+
+.text{
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #cfd3e2;
+  text-align: left;
+  margin-left: 30px;
+  font-family: 'GalanoGrotesque';
+}
+.valueVerde{
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  color: #20ff00;
+  margin-top: 0;
+}
+
+.valueVermelho{
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  color: #dd0000;
+  margin-top: 0;
+}
+
+.valueAmarelo{
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  color: #ffce00;
+  margin-top: 0;
+}
+
+.alarme{
+  width: 180.6px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #d8d8d8;
+  font-family: GalanoGrotesque;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-align: center;
+  color: #dd0000;
+  text-align: center;
+  text-justify: center;
+  position: absolute;
+  left: 80%;
+  top: 10vh;
+}
+.localizacao{
+  margin-top: 10%;
+}
+.localizacaoText{
+  font-family: GalanoGrotesque;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 2px;
+  color: #cfd3e2;
+  text-align: right;
+  margin-right: 5%;
+
+}
+
+.localizacaoButton{
+  width: 130.6px;
+  height: 36px;
+  border-radius: 28px;
+  background-color: #d8d8d8;
+  font-family: GalanoGrotesque;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  text-justify: center;
+  position: absolute;
+  right: 5%;
+
+}
+
+
